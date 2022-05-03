@@ -27,7 +27,7 @@ const Home: NextPage = () => {
       await authenticate({
         signingMessage: 'Log in using Moralis',
         provider: 'walletconnect',
-        // mobileLinks: ['wallet', 'account'],
+        mobileLinks: ['metamask', 'algowallet'],
         // chainId: 3,
       })
         .then(function (user) {
